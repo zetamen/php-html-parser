@@ -1,9 +1,9 @@
 {
-    "name": "paquettg/php-html-parser",
+    "name": "zetamen/php-html-parser",
     "type": "library",
     "description": "An HTML DOM parser. It allows you to manipulate HTML. Find tags on an HTML page with selectors just like jQuery.",
     "keywords": ["html", "dom", "parser"],
-    "homepage": "https://github.com/paquettg/php-html-parser",
+    "homepage": "https://github.com/zetamen/php-html-parser",
     "license": "MIT",
     "authors": [
         {
@@ -13,14 +13,14 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": "^8.2",
         "ext-mbstring": "*",
         "ext-zlib": "*",
         "ext-curl": "*",
         "paquettg/string-encode": "~1.0.0",
         "php-http/httplug": "^2.1",
-        "guzzlehttp/guzzle": "^7.0",
-        "guzzlehttp/psr7": "^1.6",
+        "guzzlehttp/guzzle": "^7.2",
+        "guzzlehttp/psr7": "^2.4.1",
         "myclabs/php-enum": "^1.7"
     },
     "require-dev": {
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": { 
-        	"PHPHtmlParser\\": "src/PHPHtmlParser"
-       	}
+            "PHPHtmlParser\\": "src/PHPHtmlParser"
+        }
     }
 }
