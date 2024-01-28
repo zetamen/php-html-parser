@@ -130,7 +130,7 @@ class Collection implements IteratorAggregate, ArrayAccess, Countable
      *
      * @return mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->collection[$offset] ?? null;
     }
@@ -147,7 +147,7 @@ class Collection implements IteratorAggregate, ArrayAccess, Countable
      * Similar to jQuery "each" method. Calls the callback with each
      * Node in this collection.
      */
-    public function each(callable $callback)
+    public function each(callable $callback): void
     {
         foreach ($this->collection as $key => $value) {
             $callback($value, $key);
